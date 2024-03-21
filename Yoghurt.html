@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yougurt</title>
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #fc709b;
+        border: 1px solid #fc709b;
+        padding: 20px;
+        border-radius: 4px;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 80%;
+        border-radius: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #fc709b;
+        color: white;
+        font-size: 18px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+      }
+
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+      .Learn {
+        display: block;
+        margin-top: 10px;
+        color: blueviolet;
+        text-decoration: none;
+      }
+
+      .Learn:hover {
+        text-decoration: underline;
+      }
+      em {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Content">
+      <h1>Greek Yogurt benefits</h1>
+      <h2>Why Greek Yogurt is good for you</h2>
+      <hr />
+      <img
+        src="https://media.glamourmagazine.co.uk/photos/6490648529b7cd6e2296df22/16:9/w_1600,c_limit/GREEK%20YOGHURT%20190623%20GettyImages-1345371726_L.jpeg"
+        alt="GreekYogurt"
+        width="500"
+      />
+      <hr />
+      <p>
+        Greek yogurt is <strong>a thick, creamy yogurt</strong> that can add
+        flavor and texture to foods. Other benefits of Greek yogurt include
+        boosting bone health, building muscle mass, and lowering the risk of
+        certain health conditions
+        <br />
+        <a
+          href="https://www.medicalnewstoday.com/articles/323169"
+          target="_blank"
+          class="Learn"
+        >
+          Learn more benefits
+        </a>
+      </p>
+      <button class="BuyB">Buy GreekYogurt</button>
+
+      <em
+        >This code is written by
+        <span style="color: blueviolet">Cindy Phalane</span>
+      </em>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        if (name) {
+          alert("Thank You! " + name);
+        } else {
+          alert("Please enter Your Name!");
+        }
+      }
+      let BuyB = document.querySelector(".BuyB");
+      BuyB.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
